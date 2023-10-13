@@ -82,7 +82,7 @@ const NavBar = () => {
     >
       <div className="font-bold  text-xl">
         <Link to="/">
-          <img src="../../favicon.jpg" alt="logo" />
+          <img className="w-10" src="../../favicon.jpg" alt="logo" />
         </Link>
       </div>
       <div className="flex md:flex-row-reverse items-center justify-between gap-x-4">
