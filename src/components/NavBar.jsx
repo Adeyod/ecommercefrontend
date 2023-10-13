@@ -81,7 +81,9 @@ const NavBar = () => {
       } transition-all duration-300 ease-in-out`}
     >
       <div className="font-bold  text-xl">
-        <Link to="/">LOGO</Link>
+        <Link to="/">
+          <img src="../../favicon.jpg" alt="logo" />
+        </Link>
       </div>
       <div className="flex md:flex-row-reverse items-center justify-between gap-x-4">
         <div className="relative">
