@@ -16,6 +16,7 @@ const CardButton = () => {
   const handleCheckout = () => {
     if (!currentUser || currentUser === null) {
       navigate('/login');
+      return;
     }
     axios
       .post(
