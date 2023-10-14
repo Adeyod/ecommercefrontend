@@ -106,13 +106,13 @@ const App = () => {
         <Route path="/forgot-password" element={<ForgotPassword />} />
 
         {/* <Route element={<RoleBasedRoutes />}> */}
-        <Route path="/create-product" element={<CreateProduct />} />
         {/* </Route> */}
 
         {/* THIS CAN ONLY BE SEEN IF YOU ARE AN ADMIN */}
 
         {/* LOGGED IN USERS CAN ONLY SEE THIS */}
         <Route element={<ProtectedRoutes />}>
+          <Route path="/create-product" element={<CreateProduct />} />
           <Route path="/checkout-success" element={<CheckoutSuccess />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/favourites" element={<Favourites />} />
