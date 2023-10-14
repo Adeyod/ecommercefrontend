@@ -14,7 +14,7 @@ const CardButton = () => {
   const { currentUser } = useSelector((state) => state?.user);
 
   const handleCheckout = () => {
-    if (!currentUser) {
+    if (!currentUser || currentUser === null) {
       navigate('/login');
     }
     axios
