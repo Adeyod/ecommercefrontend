@@ -14,6 +14,9 @@ const CardButton = () => {
   const { currentUser } = useSelector((state) => state?.user);
 
   const handleCheckout = () => {
+    if (!currentUser) {
+      navigate('/login');
+    }
     axios
       .post(
         'https://fullecommerce-backend.onrender.com/api/stripe/create-checkout-session',
